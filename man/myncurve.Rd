@@ -11,17 +11,14 @@ myncurve(mu, sigma, a)
 
 \item{sigma}{standard deviation}
 
-\item{a}{Upper limit for the shaded area and the cumulative probability}
+\item{a}{value to compute P(X <= a)}
 }
 \value{
-a normal distribution curve
+A named list with components 'mu', 'sigma', 'a', and 'prob' (the cumulative probability P(X <= a)).
 }
 \description{
 myncurve
 }
 \examples{
-# Standard normal: P(X <= -0.5)
-\dontrun{myncurve(mu = 0, sigma = 1, a = -0.5)}
-# Centered at 10 with spread 2: P(X <= 11)
-\dontrun{myncurve(mu = 10, sigma = 2, a = 11)}
+\dontrun{myncurve(mu = 10, sigma = 5, a = 6)}
 }
