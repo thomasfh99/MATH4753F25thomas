@@ -14,7 +14,7 @@ myncurve(mu, sigma, a)
 \item{a}{value to compute P(X <= a)}
 }
 \value{
-A named list with components 'mu', 'sigma', 'a', and 'prob' (the cumulative probability P(X <= a)).
+A named list with components 'mu', 'sigma', 'a', and 'area' (the cumulative probability P(X <= a)).
 }
 \description{
 myncurve

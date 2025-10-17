@@ -7,7 +7,7 @@
 #' @importFrom stats dnorm pnorm
 #' @autoglobal
 #'
-#' @returns A named list with components 'mu', 'sigma', 'a', and 'prob' (the cumulative probability P(X <= a)).
+#' @returns A named list with components 'mu', 'sigma', 'a', and 'area' (the cumulative probability P(X <= a)).
 #' @export
 #'
 #' @examples
@@ -21,13 +21,14 @@ myncurve = function(mu, sigma, a) {
         xlab = "x")
 
   # Shade area from -Inf to a
-  x_vals = seq(mu - 3 * sigma, a, length.out = 1000)
+  x_vals = seq(mu - 3 * sigma, a, length = 1000)
   y_vals = dnorm(x_vals, mean = mu, sd = sigma)
-  polygon(c(x_vals, a), c(y_vals, 0), col = "skyblue")
+  polygon(c(x_vals, a), c(y_vals, 0), col = "#00ffff")
 
   # Calculate cumulative probability
-  prob = pnorm(a, mean = mu, sd = sigma)
+  area = pnorm(a, mean = mu, sd = sigma)
+  area = round(area, 4)
 
   # Return named list
-  return(list(mu = mu, sigma = sigma, a = a, prob = prob))
+  return(list(mu = mu, sigma = sigma, a = a, area = area))
 }
