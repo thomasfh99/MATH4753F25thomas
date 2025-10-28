@@ -2,6 +2,7 @@
 
 export(birthday)
 export(mybin)
+export(mycltb)
 export(myfirstfunction)
 export(myfun)
 export(myncurve)
@@ -17,3 +18,4 @@ importFrom(graphics,par)
 importFrom(graphics,polygon)
 importFrom(stats,dnorm)
 importFrom(stats,pnorm)
+importFrom(stats,rbinom)
