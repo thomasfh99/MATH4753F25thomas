@@ -9,7 +9,6 @@ A data frame with 36 rows and 2 variables:
 \describe{
   \item{BHDiameter}{breast height diameter in cm}
   \item{Height}{height in m}
-  ...
 }
 }
 \source{
@@ -19,6 +18,6 @@ A data frame with 36 rows and 2 variables:
 spruce
 }
 \description{
-A data set from MS
+A data set from MS that measures different components of spruce trees.
 }
 \keyword{datasets}
