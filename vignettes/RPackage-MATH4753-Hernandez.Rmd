@@ -74,5 +74,3 @@ summary(fire)
 # Link to GITHUB
 
 [Thomas Hernandez's R Package for MATH-4753](https://github.com/thomasfh99/MATH4753F25thomas.git)
-
-
